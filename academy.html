@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shahira Academy</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+    }
+    header {
+      background-color: #1e3c72;
+      color: silver;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+    header p {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #2a5298;
+    }
+    nav a {
+      color: silver;
+      padding: 15px 20px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+    nav a:hover {
+      background-color: #1e3c72;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    section h2 {
+      color: #1e3c72;
+      border-bottom: 2px solid #2a5298;
+      padding-bottom: 10px;
+      margin-bottom: 20px;
+    }
+    ul li {
+      margin-bottom: 10px;
+    }
+    form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      max-width: 600px;
+      margin: auto;
+    }
+    form label {
+      display: block;
+      margin-top: 15px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 5px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 1em;
+    }
+    form input[type="submit"] {
+      background-color: #2a5298;
+      color: white;
+      border: none;
+      padding: 12px;
+      font-size: 1em;
+      cursor: pointer;
+      margin-top: 20px;
+    }
+    form input[type="submit"]:hover {
+      background-color: #1e3c72;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Shahira Academy</h1>
+    <p>Innovate, Educate, Elevate</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#courses">Courses</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Shahira Academy is committed to academic excellence and holistic development. Our dedicated faculty offers personalized coaching tailored to each student's needs, from foundational concepts to advanced problem-solving. We foster a motivating and nurturing environment to help students achieve their full potential in both school and board examinations.We proudly handle both State Board and CBSE curriculums in Tamil and English mediums, offering classes in both online and offline modes to suit every student's convenience and learning style.
+
+
+
+
+
+
+
+ Parents trust us for our transparent communication, consistent results, and passion for education.</p>
+  </section>
+
+  <section id="courses">
+    <h2>Courses Offered</h2>
+    <ul>
+      <li><strong>Mathematics (All Grades)</strong>, including Business Maths</li>
+      <li>Science (Physics, Chemistry, Biology, Botany)</li>
+      <li>Computer Science & Applications</li>
+      <li>Commerce, Economics, Accounts</li>
+      <li>English and Tamil</li>
+    </ul>
+  </section>
+
+  <section id="achievements">
+    <h2>Achievements</h2>
+    <p><strong>2023 - 2024 Board Results:</strong></p>
+    <h4>10th Standards</h4>
+    <ul>
+      <li>Mathematics: Zohara Aafrin - 97, Jaysree - 91</li>
+      <li>Science: Jaysree - 84</li>
+    </ul>
+    <p><strong>2024 - 2025 Board Results:</strong></p>
+    <h4>10th Standards</h4>
+    <ul>
+      <li>Aafia Nasreen: Tamil – 97, English – 99, Mathematics – 94, Science – 98, Social Science – 99<br/>Total – 487 / 500<br/><strong>School 4th Rank | Chennai District 6th Rank</strong></li>
+      <li>Mathematics: Nithish – 89, Varunavi – 75</li>
+    </ul>
+    <p><strong>11th Standard:</strong></p>
+    <ul>
+      <li>Mathematics: Petchi Muthu – 64</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p><strong>Phone:</strong> 7299988997</p>
+    <p><strong>Email:</strong> shahiraacademy@gmail.com</p>
+    <p><strong>Address:</strong> 3/9, Valluvar Salai, Ramapuram, Chennai, Tamil Nadu, India</p>
+
+    <form action="https://formspree.io/f/xblobvwp" method="POST">
+      <label for="studentName">Student Name</label>
+      <input id="studentName" name="studentName" required placeholder="Student's full name" />
+
+      <label for="classGrade">Class / Grade</label>
+      <input id="classGrade" name="classGrade" required placeholder="e.g., 10th Standard" />
+
+      <label for="subjects">Required Subject(s)</label>
+      <input id="subjects" name="subjects" required placeholder="e.g., Maths, Science" />
+
+      <label for="parentName">Parent Name</label>
+      <input id="parentName" name="parentName" required placeholder="Parent's full name" />
+
+      <label for="parentEmail">Parent Email</label>
+      <input id="parentEmail" type="email" name="_replyto" required placeholder="Parent's email" />
+
+      <label for="phone">Phone Number</label>
+      <input id="phone" type="tel" name="phone" required placeholder="Phone number" />
+
+      <label for="message">Additional Message (Optional)</label>
+      <textarea id="message" name="message" rows="4" placeholder="Any additional information"></textarea>
+
+      <input type="submit" value="Send Message" />
+    </form>
+  </section>
+</body>
+</html>
